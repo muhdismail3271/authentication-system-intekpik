@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="loginregistration.js"></script>
+  </head>
+
+  <body
+    class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-indigo-500 to-purple-600 p-4"
+  >
+    <a
+      href="https://intelpik.com/"
+      target="_blank"
+      class="absolute top-0 left-0"
+    >
+      <img
+        src="images/b1ba32e4-fcf2-4cf3-b22b-b964eb9e9e19.png"
+        alt="Intelpik Logo"
+        class="h-[150px] w-[250px] object-contain transition duration-300 hover:scale-105"
+      />
+    </a>
+
+    <div
+      class="w-full max-w-lg md:max-w-xl min-h-[460px] p-10 md:p-12 rounded-2xl bg-white/10 backdrop-blur-lg border border-white/20 shadow-xl flex flex-col"
+    >
+      <h2
+        class="text-3xl font-semibold text-white text-center"
+        style="font-family: 'Poppins', sans-serif"
+      >
+        Sign In
+      </h2>
+
+      <form id="loginform" class="flex flex-col flex-1">
+        <div class="mt-12 space-y-6">
+          <div>
+            <label for="loginemail" class="text-white text-sm">Email</label>
+            <input
+              id="loginemail"
+              type="text"
+              placeholder="ismail@intelpik.com"
+              class="w-full border rounded-lg p-2"
+              required
+            />
+            <p class="error text-red-500 font-normal text-xs"></p>
+          </div>
+
+          <div class="relative">
+            <label for="loginpass" class="text-white text-sm"
+              >Password</label
+            >
+            <input
+              id="loginpass"
+              type="password"
+              placeholder="Password"
+              class="w-full border rounded-lg p-2 pr-10"
+              required
+            />
+            <button
+              type="button"
+              class="show-pass absolute right-2 top-9"
+            >
+              🫣
+            </button>
+            <p class="error text-red-500 font-normal text-xs"></p>
+          </div>
+        </div>
+
+        <div class="flex justify-center mt-10">
+          <button
+            class="px-10 py-2 text-white rounded-lg bg-[linear-gradient(to_right,#6366f1_50%,#9333ea_50%)] bg-[length:200%_100%] bg-right transition-all duration-600 hover:bg-left hover:scale-[1.05] active:scale-[0.97]"
+          >
+            Login
+          </button>
+        </div>
+
+        <div class="mt-auto pt-8 text-center text-white">
+          No account? &nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="signup.html" class="font-semibold text-red-300">Register</a>
+        </div>
+      </form>
+    </div>
+
+    <div class="flex justify-center gap-6 mt-6">
+      <a href="https://in.linkedin.com/company/intelpik" target="_blank">
+        <img
+          src="images/12236cc9-99be-4ee5-9556-17400ee0bfa7.jpg"
+          class="w-6 h-6 bg-indigo-600 opacity-80 hover:opacity-100 hover:scale-110 transition"
+        />
+      </a>
+
+      <a href="">
+        <img
+          src="images/download (2).jpg"
+          class="w-6 h-6 bg-indigo-600 opacity-80 hover:opacity-100 hover:scale-110 transition"
+        />
+      </a>
+    </div>
+  </body>
+</html>
